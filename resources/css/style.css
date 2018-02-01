@@ -124,3 +124,22 @@ li a {
 }
 .hours {
 }
+
+footer {
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-top:4rem;
+  padding: 90px 0px;
+}
+.footer {
+  width:960px;
+  display: flex;
+  align-items: center;
+
+}
+span.copyright {
+  color: white;
+}
