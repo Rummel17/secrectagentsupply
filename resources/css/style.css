@@ -1,0 +1,12 @@
+
+body, html {
+  font-family: helvetica;
+  font-size: 18px;
+
+}
+
+
+span.company.name {
+  font-size: 1rem;
+  color; white;
+}
