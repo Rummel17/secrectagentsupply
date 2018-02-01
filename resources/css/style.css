@@ -70,7 +70,9 @@ ul.menu {
   align-items: center;
 }
 
-
+ul.small-menu {
+  display: none;
+}
 li {
   display: inline-block;
   padding: 0.75rem 0rem;
@@ -142,4 +144,29 @@ footer {
 }
 span.copyright {
   color: white;
+}
+
+
+
+@media all and (max-width: 1024px){
+  ul.menu {
+    display:none;
+  }
+  ul.small-menu {
+    width: 960px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .adjust.space {
+    width: 960px;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 3rem;}
+  .glasses {
+    display:none;
+  }
+  .pen, .watch {
+    width: 47%;
+  }
 }
