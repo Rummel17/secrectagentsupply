@@ -8,27 +8,33 @@ header {
   background-color: black;
 }
 
-.main {
-  min-height: calc(100vh - 50rem);
-}
 .container {
   max-width: 960px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .container img {
+  height: 24px;
   height: 1.5rem;
+  padding: 0px 16px 0px 8px;
   padding: 0rem 1rem 0rem 0.5rem;
 }
 span.company.name {
+  font-size: 16px;
   font-size: 1rem;
   color: white;
+  padding: 10.56px 0;
   padding: 0.66rem 0;
 }
 
 /* banner section */
 .main.banner {
+  height: 400px;
   height: 25rem;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   background-size: cover;
@@ -37,22 +43,28 @@ span.company.name {
 
 .new.arrival {
   background-color: black;
+  margin: 144px 0px 0px 0px;
   margin: 9rem 0rem 0rem 0rem;
+  width: 320px;
   width: 20rem;
+  padding: 32px 48px;
   padding: 2rem 3rem;
   color: white;
   font-weight: bold;
 }
 
 h1 {
+  font-size: 32px;
   font-size: 2rem;
+  margin: 8px 0;
   margin: 0.5rem 0;
   line-height: 1.2;
 }
 
 @media only screen and (max-width: 470px){
 .new.arrival {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
 }
 .container{
@@ -60,6 +72,8 @@ h1 {
   width: 100%;
 }
 .main.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 h1 {
@@ -74,20 +88,31 @@ h4 {
 /* menu section */
 nav.menu {
   background-color: firebrick;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 ul.menu {
   width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 ul.small-menu {
   display: none;
 }
 li {
   display: inline-block;
+  padding: 12px 0px;
   padding: 0.75rem 0rem;
 }
 li a {
@@ -100,8 +125,12 @@ li a {
   }
   ul.small-menu {
     width: 960px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -113,8 +142,13 @@ li a {
 }
 
 .products, .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
   margin-top: 3rem;
 }
 .adjust.space{
@@ -122,15 +156,24 @@ width: 30%;
 }
 
 .product-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 144px;
   height: 9rem;
+  padding: 32px 0;
   padding: 2rem 0;
   border: 4px solid black;
 }
 
 .product-image img{
+  max-width: 128px;
   max-width: 8rem;
 }
 
@@ -139,6 +182,7 @@ width: 30%;
   color: white;
   display: block;
   text-align: center;
+  padding: 8px 0px;
   padding: 0.5rem 0rem;
 }
 
@@ -147,12 +191,14 @@ width: 30%;
   width: 35%;
 }
 p {
+  padding-top: 8px;
   padding-top: 0.5rem;
 }
 
 .location span, .hours span {
   display: block;
   background-color: black;
+  padding: 16px 32px;
   padding: 1rem 2rem;
   color: white;
 }
@@ -178,16 +224,24 @@ p {
     margin: 0 auto;
   }
   .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 /*footer section*/
 footer {
   background-color: black;
+  margin-top: 64px;
   margin-top:4rem;
+  height: 80px;
   height: 5rem;
+  padding: 64px 0px 0px 0px;
   padding: 4rem 0rem 0rem 0rem;
 }
 span.copyright {
