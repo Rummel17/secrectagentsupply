@@ -261,9 +261,10 @@ span.copyright {
     text-align: center;
   }
 }
-@media (max-width: 1024px)
+@media (max-width: 1024px){
 body, html {
 /* height: 100%!important; */
 overflow: auto!important;
 max-height: 100% !important;
+}
 }
