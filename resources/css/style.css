@@ -209,6 +209,9 @@ p {
   .adjust.space {
     width: 47%;
   }
+  .main {
+    min-height: calc(100vh - 50rem);
+}
 }
 
 @media only screen and (max-width: 470px){
