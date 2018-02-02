@@ -109,6 +109,7 @@ ul.menu {
 }
 ul.small-menu {
   display: none;
+
 }
 li {
   display: inline-block;
@@ -131,7 +132,12 @@ li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            font-size: 1.5rem;
   }
+  span.company.name {
+    font-size: 1.5rem
+  }
+
 }
 
 /* products & business info*/
@@ -210,7 +216,7 @@ p {
     width: 47%;
   }
   .main {
-    min-height: calc(100vh - 50rem);
+    min-height: calc(100vh - 75rem);
 }
 }
 
