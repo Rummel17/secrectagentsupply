@@ -7,6 +7,9 @@ body, html {
 header {
   background-color: black;
 }
+main {
+  min-height: calc(100vh - 30rem);
+}
 
 .container {
   max-width: 960px;
@@ -261,10 +264,9 @@ span.copyright {
     text-align: center;
   }
 }
-@media (max-width: 1024px){
+@media (max-width: 1024px)
 body, html {
 /* height: 100%!important; */
-overflow: hidden !important;
+overflow: auto!important;
 max-height: 100% !important;
-}
 }
