@@ -183,10 +183,9 @@ p {
 
 /*footer section*/
 footer {
-  height: 6rem;
   background-color: black;
   margin-top:4rem;
-  padding: 4rem 0rem 0rem 0rem;
+  padding: 4rem 0rem 4rem 0rem;
 }
 span.copyright {
   color: white;
@@ -194,6 +193,7 @@ span.copyright {
 .container-footer {
   max-width: 960px;
   margin: 0 auto;
+  clear: both;
 }
 
 @media only screen and (max-width: 470px) {
