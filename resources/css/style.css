@@ -5,17 +5,12 @@ body, html {
 }
 
 header {
-  width: 100%;
   background-color: black;
-  display: flex;
-  flex-direction: column;
 }
-.adjust.center{
-  display: flex;
-  justify-content: center;
-}
+
 .container {
-  width: 960px;
+  max-width: 960px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -26,42 +21,58 @@ header {
 span.company.name {
   font-size: 1rem;
   color: white;
-  padding: 0.66rem 0rem;
+  padding: 0.66rem 0;
 }
+
+/* banner section */
 .main.banner {
-  width: 100%;
   height: 25rem;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   background-size: cover;
-  display: flex;
-  justify-content: center;
+  background-position: center;
 }
 
 .new.arrival {
   background-color: black;
   margin: 9rem 0rem 0rem 0rem;
   width: 20rem;
-  padding: 3rem 3rem;
+  padding: 2rem 3rem;
   color: white;
   font-weight: bold;
 }
 
 h1 {
   font-size: 2rem;
-  margin-top: 0.9rem;
-  letter-spacing: -0.5px;
-}
-h4 {
-  font-size: 1rem;
-  letter-spacing: -0.5px;
+  margin: 0.5rem 0;
+  line-height: 1.2;
 }
 
-nav.menu {
+@media only screen and (max-width: 470px){
+.new.arrival {
+  align-self: flex-end;
   width: 100%;
+}
+.container{
+  margin: 0;
+  width: 100%;
+}
+.main.banner {
+  display: flex;
+}
+h1 {
+  font-size: 1rem;
+  display: block;
+}
+h4 {
+  font-size: 0.66rem;
+}
+}
+
+/* menu section */
+nav.menu {
   background-color: firebrick;
   display: flex;
   justify-content: center;
-
 }
 ul.menu {
   width: 960px;
@@ -69,7 +80,6 @@ ul.menu {
   justify-content: space-between;
   align-items: center;
 }
-
 ul.small-menu {
   display: none;
 }
@@ -77,78 +87,11 @@ li {
   display: inline-block;
   padding: 0.75rem 0rem;
 }
-
 li a {
   color: white;
   text-decoration: none;
 }
-/* products & business info*/
-.adjust.space {
-  width: 960px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
-}
-.product {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 25%;
-  border: 4px solid black;
-}
-.product img {
-  max-width: 144px;
-  height: 144px;
-  padding: 2rem 2rem;
-  margin: auto;
-}
-.product.glasses img {
-  height: 66px;
-}
-.product span {
-  background-color: black;
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 0.5rem 0rem;
-  width: 100%;
-}
-
-.location, .hours {
-  width: 35%;
-}
-.location span, .hours span {
-  display: block;
-  background-color: black;
-  padding: 1rem 2rem;
-  color: white;
-}
-.hours {
-}
-
-footer {
-  height: 5rem;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  margin-top:4rem;
-  padding: 90px 0px;
-}
-.footer {
-  width:960px;
-  display: flex;
-  align-items: center;
-
-}
-span.copyright {
-  color: white;
-}
-
-
-
-@media all and (max-width: 1024px){
+@media only screen and (max-width: 1024px){
   ul.menu {
     display:none;
   }
@@ -157,16 +100,97 @@ span.copyright {
     display: flex;
     justify-content: center;
   }
+}
 
-  .adjust.space {
-    width: 960px;
-    display: flex;
-    justify-content:space-between;
-    margin-top: 3rem;}
+/* products & business info*/
+
+.container-main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.products, .info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.adjust.space{
+width: 30%;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+}
+
+.product-image img{
+  max-width: 8rem;
+}
+
+.description{
+  background-color: black;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+
+
+.location, .hours {
+  width: 35%;
+
+}
+
+.location span, .hours span {
+  display: block;
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+}
+@media only screen and (max-width: 1024px){
   .glasses {
     display:none;
   }
-  .pen, .watch {
+  .adjust.space {
     width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .watch {
+    display: none;
+  }
+.adjust.space {
+  width:90%;
+  margin: 0 auto;
+}
+  .location, .hours {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*footer section*/
+footer {
+  height: 4rem;
+  background-color: black;
+  margin-top:4rem;
+  padding: 5rem 0rem 2rem 0rem;
+}
+span.copyright {
+  color: white;
+}
+
+@media only screen and (max-width: 470px) {
+  .container-footer {
+    text-align: center;
   }
 }
