@@ -182,10 +182,10 @@ p {
 
 /*footer section*/
 footer {
-  height: 100%;
+  height: 6rem;
   background-color: black;
   margin-top:4rem;
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 4rem 0rem 0rem 0rem;
 }
 span.copyright {
   color: white;
