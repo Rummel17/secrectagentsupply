@@ -142,7 +142,9 @@ width: 30%;
 
 .location, .hours {
   width: 35%;
-
+}
+p {
+  padding-top: 0.5rem;
 }
 
 .location span, .hours span {
@@ -180,10 +182,10 @@ width: 30%;
 
 /*footer section*/
 footer {
-  height: 4rem;
+  height: 100%;
   background-color: black;
   margin-top:4rem;
-  padding: 5rem 0rem 2rem 0rem;
+  padding: 3rem 0rem 3rem 0rem;
 }
 span.copyright {
   color: white;
