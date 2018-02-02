@@ -2,14 +2,13 @@
 body, html {
   font-family: helvetica;
   font-size: 18px;
-  min-width: calc(100vh - 5rem);
 }
 
 header {
   background-color: black;
 }
-
 main {
+  min-height: calc(100vh - 5rem);
 }
 
 .container {
