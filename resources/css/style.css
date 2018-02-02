@@ -10,7 +10,6 @@ header {
 }
 
 main {
-  min-width: calc(100vh - 5rem);
 }
 
 .container {
