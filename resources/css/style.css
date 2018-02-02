@@ -8,7 +8,7 @@ header {
   background-color: black;
 }
 main {
-  min-height: calc(100vh - 20rem);
+  min-height: calc(100vh - 35rem);
 }
 
 .container {
@@ -247,8 +247,8 @@ p {
 footer {
   background-color: black;
   margin-top:4rem;
-  height: 5rem;
-  padding: 4rem 0rem 0rem 0rem;
+  height: 10rem;
+  padding: 6rem 0rem 0rem 0rem;
 }
 span.copyright {
   color: white;
