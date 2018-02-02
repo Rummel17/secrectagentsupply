@@ -8,7 +8,7 @@ header {
   background-color: black;
 }
 main {
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 35rem);
 }
 
 .container {
